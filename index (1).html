@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Infomantra - Blogs, About Bhupendra Singh Markam, and Contact form">
+  <title>Infomantra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+      color: #333;
+    }
+    header, footer {
+      background: linear-gradient(to right, #007acc, #005fa3);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #00acc1;
+      padding-bottom: 8px;
+      color: #006064;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #0069ed;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #0056c1;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    article h3 {
+      margin-top: 0;
+      color: #007acc;
+    }
+    article p {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Infomantra</h1>
+    <nav>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="blog">
+      <h2>Latest Blog Posts</h2>
+      <article>
+        <h3>How to Stay Productive While Working From Home</h3>
+        <p>Learn practical tips and habits to maintain productivity and motivation while working remotely from your home environment.</p>
+      </article>
+      <article>
+        <h3>Top 5 Free Tools for Digital Creators</h3>
+        <p>Explore the best free online tools for bloggers, graphic designers, video editors, and freelancers to boost your work quality.</p>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm <strong>Bhupendra Singh Markam</strong>, a system operator and tech enthusiast from Madhya Pradesh. I have training from CDAC and work experience with Awign Enterprises Pvt. Ltd. Through Infomantra, I aim to share valuable information on technology, daily tips, and career help.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your_form_id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Or email me at: <a href="mailto:bhupendrasinghmarkam1999@gmail.com">bhupendrasinghmarkam1999@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Bhupendra Singh Markam &copy; 2025</p>
+  </footer>
+</body>
+</html>
