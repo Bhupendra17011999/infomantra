@@ -1,14 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Infomantra - Blog Website</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="UXob-JIKxM7HDU7RPcS0iSCrn1Q2oYLGqrRenGQsU5k" />
+  <meta name="description" content="Infomantra - Blogs, About Bhupendra Singh Markam, and Contact form">
+  <title>Infomantra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f5f7fa; color: #333; }
+    header, footer { background: #222; color: #fff; text-align: center; padding: 1rem 0; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 600; }
+    .container { padding: 20px; max-width: 900px; margin: auto; }
+    section { margin-bottom: 40px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    h2 { border-bottom: 2px solid #eee; padding-bottom: 8px; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #ccc; }
+    form button { background: #0069ed; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    form button:hover { background: #0056c1; }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Infomantra!</h1>
-  <p>This is Bhupendra Singh Markam's official blog website.</p>
-  <p>Here you'll find articles, videos, and useful content.</p>
+  <header>
+    <h1>Infomantra</h1>
+    <nav>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="blog">
+      <h2>Latest Blog Posts</h2>
+      <p><strong>Blog Title 1:</strong> Coming Soon...</p>
+      <p><strong>Blog Title 2:</strong> Stay tuned for more updates.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm <strong>Bhupendra Singh Markam</strong>, a system operator and tech enthusiast from Madhya Pradesh. I have training from CDAC and work experience with Awign Enterprises Pvt. Ltd. Through Infomantra, I aim to share valuable information on technology, daily tips, and career help.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your_form_id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Or email me at: <a href="mailto:bhupendrasinghmarkam1999@gmail.com">bhupendrasinghmarkam1999@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Bhupendra Singh Markam &copy; 2025</p>
+  </footer>
 </body>
 </html>
