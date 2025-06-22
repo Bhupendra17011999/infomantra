@@ -7,6 +7,56 @@
   <meta name="author" content="Infomantra Team">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      background-color: yellow;
+      color: black;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background-color: #004f9e;
+      color: white;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .hero {
+      background-color: yellow;
+      color: red;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+    .card {
+      background-color: white;
+      color: black;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 10px;
+      width: 300px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .card a {
+      color: #004f9e;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>  <header>
     <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
@@ -24,7 +74,7 @@
         <a href="contact.html">Contact Us</a>
       </nav>
     </div>
-  </header>  <section class="hero" style="background: url('images/hero-bg.jpg') center/cover no-repeat; padding: 60px 20px; color: white; text-align: center;">
+  </header>  <section class="hero">
     <div class="hero-text">
       <h2>Explore the Power of Information</h2>
       <p>Tech | Cybersecurity | Innovation | Daily Updates</p>
@@ -33,17 +83,17 @@
     <div class="card">
       <h3>Latest Blogs</h3>
       <p>Stay informed with trending technology blogs.</p>
-      <a href="blogs.html" class="btn">Read Blogs →</a>
+      <a href="blogs.html">Read Blogs →</a>
     </div>
     <div class="card">
       <h3>Articles</h3>
       <p>In-depth articles on innovation, AI, blockchain & more.</p>
-      <a href="articles.html" class="btn">Read Articles →</a>
+      <a href="articles.html">Read Articles →</a>
     </div>
     <div class="card">
       <h3>Tech News</h3>
       <p>Catch up with latest tech & cybersecurity headlines.</p>
-      <a href="news.html" class="btn">View News →</a>
+      <a href="news.html">View News →</a>
     </div>
   </section>  <footer>
     <nav>
@@ -57,4 +107,4 @@
     </nav>
     <p>&copy; 2025 Infomantra | All rights reserved.</p>
   </footer></body>
-      </html>
+        </html>
