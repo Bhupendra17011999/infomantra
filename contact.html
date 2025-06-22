@@ -2,17 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Infomantra - Contact</title>
+  <title>Infomantra - Contact Us</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Contact Us</h1>
-  <form>
-    <input type="text" placeholder="Name" required><br>
-    <input type="email" placeholder="Email" required><br>
-    <textarea placeholder="Message" rows="5" required></textarea><br>
-    <button type="submit">Send</button>
-  </form>
-  <a href="index.html">Back to Home</a>
+
+  <header>
+    <div class="container">
+      <h1>Infomantra</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="articles.html">Articles</a>
+        <a href="news.html">News</a>
+        <a href="daily.html">Daily</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Infomantra | Get in touch, stay informed.</p>
+  </footer>
+
 </body>
 </html>
+``
