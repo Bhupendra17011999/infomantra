@@ -1,110 +1,104 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Infomantra - Home</title>
-  <meta name="description" content="Infomantra is a tech knowledge platform covering blogs, articles, news, and daily updates on AI, cybersecurity, and digital innovation.">
-  <meta name="keywords" content="Infomantra, technology blog, AI articles, cyber security, digital news, daily tech updates">
-  <meta name="author" content="Infomantra Team">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>InfoMantra</title>
   <style>
     body {
-      background-color: yellow;
-      color: black;
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8dc;
     }
-    header, footer {
-      background-color: #004f9e;
+
+    header {
+      background-color: #333;
       color: white;
+      padding: 15px;
+      text-align: center;
     }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
     nav a {
       color: white;
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
-    .hero {
-      background-color: yellow;
-      color: red;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .cards {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 40px 20px;
-    }
-    .card {
-      background-color: white;
-      color: black;
-      border: 1px solid #ccc;
+
+    section {
       padding: 20px;
-      margin: 10px;
-      width: 300px;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
     }
-    .card a {
-      color: #004f9e;
+
+    #contact {
+      background-color: #fffbe6;
+      padding: 20px;
+      border-top: 3px solid #ffc107;
+    }
+
+    #contact h2 {
+      color: #d32f2f;
+    }
+
+    #contact a {
+      color: #0d47a1;
       text-decoration: none;
     }
-    .card a:hover {
-      text-decoration: underline;
-    }
+
     footer {
+      background-color: #333;
+      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 10px;
     }
   </style>
 </head>
-<body>  <header>
-    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
-      <div style="display: flex; align-items: center;">
-        <img src="logo.png" alt="Infomantra Logo" style="height: 50px; margin-right: 15px;">
-        <h1 style="margin: 0;">Infomantra</h1>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="blogs.html">Blogs</a>
-        <a href="articles.html">Articles</a>
-        <a href="news.html">News</a>
-        <a href="daily.html">Daily Updates</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-    </div>
-  </header>  <section class="hero">
-    <div class="hero-text">
-      <h2>Explore the Power of Information</h2>
-      <p>Tech | Cybersecurity | Innovation | Daily Updates</p>
-    </div>
-  </section>  <section class="cards">
-    <div class="card">
-      <h3>Latest Blogs</h3>
-      <p>Stay informed with trending technology blogs.</p>
-      <a href="blogs.html">Read Blogs →</a>
-    </div>
-    <div class="card">
-      <h3>Articles</h3>
-      <p>In-depth articles on innovation, AI, blockchain & more.</p>
-      <a href="articles.html">Read Articles →</a>
-    </div>
-    <div class="card">
-      <h3>Tech News</h3>
-      <p>Catch up with latest tech & cybersecurity headlines.</p>
-      <a href="news.html">View News →</a>
-    </div>
-  </section>  <footer>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blogs.html">Blogs</a>
-      <a href="articles.html">Articles</a>
-      <a href="news.html">News</a>
-      <a href="daily.html">Daily Updates</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-    <p>&copy; 2025 Infomantra | All rights reserved.</p>
-  </footer></body>
-        </html>
+<body>
+
+  <header>
+    <h1>Welcome to InfoMantra</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#blog">Blog</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Home Section</h2>
+    <p>Yahan aapki website ka home content aata hai.</p>
+  </section>
+
+  <section id="blog">
+    <h2>Latest Blog</h2>
+    <p>Information Technology aur Cyber Security ke baare mein naye blog yahan padhein.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Hum IT, cyber security aur tech related information provide karte hain.</p>
+  </section>
+
+  <!-- ✅ Contact Section Added Below -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> 
+      <a href="mailto:bhupendrasinghthakur510@gmail.com">bhupendrasinghthakur510@gmail.com</a>
+    </p>
+    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+    <p><strong>Address:</strong> Your Address Here, City, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 InfoMantra | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
