@@ -1,28 +1,22 @@
-/* Root Styles */
+/* Root Color Palette */
 :root {
-  --primary-blue: #004f9e;
-  --secondary-blue: #0074d9;
-  --light-gray: #f4f6f9;
-  --text-dark: #333333;
-  --button-hover: #005bb5;
+  --pnblue: #014f9e;
+  --pngold: #ffcc00;
+  --light-gray: #f7f9fc;
+  --text-dark: #333;
 }
 
+/* Reset & Base */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--light-gray);
+  background: var(--light-gray);
   color: var(--text-dark);
 }
 
-/* Container */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* Header & Navbar */
+/* Header & Navigation */
 header {
-  background-color: var(--primary-blue);
+  background: var(--pnblue);
   padding: 20px 0;
 }
 header .container {
@@ -31,74 +25,80 @@ header .container {
   justify-content: space-between;
 }
 nav a {
-  margin: 0 15px;
+  margin: 0 12px;
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 nav a:hover {
-  color: var(--secondary-blue);
+  color: var(--pngold);
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
-  padding: 120px 20px;
-  text-align: center;
+  background: linear-gradient(120deg, var(--pnblue), var(--pngold));
   color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 .hero h2 {
-  font-size: 42px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 .hero p {
   font-size: 18px;
 }
 
-/* Card Layout */
+/* Cards Layout */
 .cards {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
   padding: 40px 0;
 }
 .card {
-  background-color: white;
-  padding: 25px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: white;
+  padding: 20px;
   width: 30%;
-  min-width: 240px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 260px;
+  border-left: 6px solid var(--pnblue);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  transition: transform 0.3s, border 0.3s;
 }
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  border-color: var(--pngold);
 }
 .card h3 {
-  color: var(--primary-blue);
+  color: var(--pnblue);
+}
+.card p {
+  margin-bottom: 12px;
 }
 .btn {
   display: inline-block;
-  padding: 10px 18px;
-  margin-top: 12px;
-  background-color: var(--secondary-blue);
+  background: var(--pnblue);
   color: white;
+  padding: 8px 14px;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: background 0.3s;
 }
 .btn:hover {
-  background-color: var(--button-hover);
+  background: var(--pngold);
+  color: var(--text-dark);
 }
 
 /* Footer */
 footer {
-  background-color: var(--primary-blue);
+  background: var(--pnblue);
   color: white;
   text-align: center;
   padding: 18px 0;
   margin-top: 60px;
 }
+footer p {
+  margin: 0;
+  }
