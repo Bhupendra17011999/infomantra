@@ -1,57 +1,88 @@
-/* style.css */
-
+/* Global styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8e1;
+  color: #333;
 }
 
 /* Header */
 header {
-  background-color: #f0f0f0;
-  padding: 10px 0;
+  background: linear-gradient(to right, #ffd54f, #ff8a65);
+  padding: 12px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 header nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+header nav a:hover {
+  color: #000;
+  border-bottom: 2px solid #fff;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #f9d423, #ff4e50);
+  background: linear-gradient(to right, #42a5f5, #478ed1);
   color: white;
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2em;
+}
 
-/* Cards */
+/* Cards Section */
 .cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 40px 10px;
+  gap: 25px;
+  padding: 50px 20px;
   flex-wrap: wrap;
 }
 .card {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 10px;
+  background: linear-gradient(to bottom right, #fff, #ffe082);
+  padding: 25px;
+  border-radius: 15px;
   width: 280px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+.card h3 {
+  color: #d84315;
+}
+.card a {
+  color: #1565c0;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card a:hover {
+  color: #0d47a1;
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background-color: yellow;
+  background: linear-gradient(to right, #ffcc80, #ffab91);
   color: black;
-  padding: 20px 10px;
+  padding: 25px 10px;
   text-align: center;
 }
 footer a {
   color: black;
   font-weight: bold;
-  margin: 0 8px;
+  margin: 0 10px;
   text-decoration: none;
   transition: color 0.3s, transform 0.3s;
   display: inline-block;
@@ -67,14 +98,27 @@ footer a:hover {
 .social-icons a {
   margin: 0 10px;
   font-size: 20px;
+  color: #333;
+  transition: color 0.3s;
 }
+.social-icons a:hover {
+  color: #d84315;
+}
+
 @media (max-width: 600px) {
-  footer nav, .social-icons {
+  header .container,
+  footer nav,
+  .social-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  header nav a,
   footer a {
     margin: 6px 0;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
