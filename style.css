@@ -1,85 +1,33 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f6f9;
-  color: #333;
-}
-
-header {
-  background: #002f4b;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: #ffd700;
-}
-
-.hero {
-  background: url('https://source.unsplash.com/1600x400/?technology,digital') no-repeat center center/cover;
-  padding: 100px 20px;
-  color: white;
-  text-align: center;
-}
-
-.hero-text h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  font-size: 18px;
-}
-
-.cards {
+.contact-form {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 40px 20px;
-  gap: 20px;
-}
-
-.card {
+  flex-direction: column;
+  gap: 15px;
   background: white;
-  padding: 25px;
+  padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 30%;
-  min-width: 250px;
-  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-.card h3 {
-  color: #002f4b;
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background: #002f4b;
+.contact-form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #002f4b;
   color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005580;
 }
