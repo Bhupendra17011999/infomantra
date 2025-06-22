@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bhupendra17011999.github.io/infomantra/sitemap.xml
